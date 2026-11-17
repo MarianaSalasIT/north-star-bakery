@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | North Star Bakery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" aria-label="North Star Bakery home">North Star Bakery</a>
+  <nav aria-label="Main navigation" class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products and Prices</a>
+    <a href="about.html">Our Bakery Story</a>
+    <a href="contact.html">Contact and Pre-Orders</a>
+  </nav>
+  </header>
+  <main class="container">
+    <h1>Welcome to North Star Bakery</h1>
+    <p>Fresh breads, comforting pastries, and celebration cakes are made
+       with care for neighbors, commuters, families, and event planners.</p>
+    <img src="bakery-storefront.jpg"
+         alt="Front entrance of North Star Bakery welcoming neighborhood guests"
+         >
+    <section class="content-card" aria-labelledby="favorites">
+      <h2 id="favorites">What We're Known For</h2>
+      <p>Visit us for crusty artisan loaves, flaky morning pastries,
+         and made-to-order cakes for life's special moments.</p>
+    </section>
+    <section class="content-card" aria-labelledby="featured">
+      <h2 id="featured">Featured Item of the Week</h2>
+      <picture>
+        <source media="(max-width: 600px)" srcset="bakery-feature-small.jpg">
+        <img src="bakery-feature-large.jpg"
+             alt="Freshly baked featured pastry displayed on a bakery counter"
+             >
+      </picture>
+      <p>Ask our team about this week's seasonal bakery special.</p>
+    </section>
+    <section class="content-card" aria-labelledby="visit">
+      <h2 id="visit">Visit Our Neighborhood Shop</h2>
+      <p>We're a neighborhood bakery serving local customers.
+         Contact us for our current address and daily opening hours.</p>
+      <p><a href="contact.html">Find contact details and request a pre-order</a></p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2026 North Star Bakery. Baked with care for our neighbors.</p>
+    <p><a href="contact.html">Questions or pre-orders? Contact us</a></p>
+  </footer>
+</body>
+</html>
