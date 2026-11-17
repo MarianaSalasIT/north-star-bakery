@@ -31,3 +31,16 @@ textarea { resize:vertical; }
 .site-footer a { color:white; }
 @media (max-width:650px) { .site-header { display:block; padding:1rem; } .site-header > a { display:block; margin-bottom:.8rem; } .site-nav { flex-direction:column; gap:.4rem; } .container { padding:2rem 1rem; } .content-card { margin:1rem 0; } }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+
+/* Touchstone 4: interactive bakery favorites and accessible field errors */
+.favorite-grid { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1rem 0; }
+.favorite-choice { display: inline-flex; align-items: center; gap: .55rem; padding: .8rem 1rem; border: 2px solid #6B3E26; border-radius: .7rem; background: #FFF8F0; color: #2F2A26; font: inherit; cursor: pointer; }
+.favorite-choice[aria-pressed="true"] { background: #6B3E26; color: #FFF8F0; }
+.favorite-choice:focus-visible, .button:focus-visible { outline: 3px solid #D88C5A; outline-offset: 3px; }
+.selection-summary { font-weight: 700; padding: .75rem; border-left: 4px solid #D88C5A; }
+.favorite-actions { display:flex; flex-wrap:wrap; gap:.75rem; align-items:center; }
+.button-secondary { background: #6B3E26; }
+.field-error { display:block; color: #8B1E1E; font-weight: 700; font-size: .95rem; margin-top: .3rem; min-height: 1.1em; }
+[aria-invalid="true"] { border: 2px solid #8B1E1E !important; }
+#form-result { font-weight: 700; }
+@media (max-width: 600px) { .favorite-grid { flex-direction: column; } .favorite-choice { width:100%; } }

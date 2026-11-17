@@ -1,0 +1,1 @@
+Touchstone 4 website files. Upload these updated files to the EXISTING GitHub repository at the top level: script.js, styles.css, products.html, contact.html. Keep your existing index.html, about.html and media. GitHub Pages deploys from main / (root). This is a demo contact form, not connected to a server. Do not upload the ZIP as a single file.
